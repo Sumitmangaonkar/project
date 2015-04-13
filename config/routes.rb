@@ -1,5 +1,9 @@
 Project::Application.routes.draw do
+  get "greetings/home"
+  get "greetings/About"
+
   resources :students
+  match '/home' => 'pages#home'
 
 
   # The priority is based upon order of creation:
